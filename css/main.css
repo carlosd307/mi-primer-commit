@@ -1,0 +1,659 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*mobileFirts*/
+
+/*-----------------------------------smartphone-----------------------------------------------------------*/
+@media (max-width : 475px)
+{
+ /*body*/
+
+.bodyIndex{
+    width: 100%;
+    height: 100vh;
+    background-image:url(/img/bodyPhone.jpeg);
+}
+   /*gridArea*/
+
+   #grid-area{
+    display: grid;
+    grid-template-areas: "menu cabeza lateral"/*fila1*/
+    "hero hero lateral" /*fila2*/ 
+    "  hero hero lateral" /*fila3*/ 
+    "pie pie pie " /*fila4*/
+    ;grid-template-columns: 20% 60% 20%;
+    ;grid-template-rows: 1fr 1fr 1fr 1fr ;
+}
+/*header*/
+
+header {
+    grid-area: cabeza;
+        
+ }
+
+ /*logoPrincipal*/
+ .imgDelLogo{
+     width: 90px;
+ }
+
+.logo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    
+}
+.imgLogo{
+width: 60%;
+height: 30%;
+padding: 5px;
+margin: 5px;
+
+
+}
+
+
+
+/*menuNavegacion*/
+nav {
+    grid-area: menu;
+    margin:2px;
+      
+}
+.navegacion ul {
+    list-style: none
+}
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px 8px;
+    color: #4D4D4D;
+    font-size: 8px;
+    font-weight: bold;
+    list-style: none
+   
+}
+
+
+
+.menu > li > a {
+    display: block;
+    padding: 5px 10px;
+    color: #4D4D4D;
+    font-size: 7px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/*subMenu*/
+
+.subMenu {
+    position: absolute;
+   display: none;
+   
+}
+
+.subMenu li a {
+    background-color: #dadada;
+    display: block;
+    padding: 5px 1px;
+    color: #4D4D4D;
+    font-size: 7px;
+    font-weight: bold;
+    text-decoration: none;  
+}
+
+
+.menu li:hover .subMenu {
+    display: block;
+}
+
+/*contenido*/
+
+#hero {
+    grid-area: hero;
+
+
+   }
+
+/*tituloIndex*/
+.heroTitle {
+    font-size: 25px;
+    color: #4D4D4D;;
+    text-transform: uppercase;
+   position: relative;
+   left: 60px;
+ 
+   
+
+}
+
+.heroSubtitle {
+    font-size: 12px;
+    color: #4D4D4D;;
+    position: relative;
+    left: 60px;
+  
+  
+}
+
+
+
+ /*laterales*/
+aside {
+    grid-area: lateral;
+    width: 100%;
+    height: 100%;
+   
+ 
+  }
+
+.carrito {
+  width: 50%;   
+ height: 12%;
+ padding: 5px;
+display: flex;
+ flex-direction: row;
+ justify-content: flex-start;
+ align-items: center;
+}
+
+.userCarrito{
+   width: 30%;
+   height: 35%;
+   padding: 5px;
+   margin: 2px;
+
+}
+/*logosMarcas*/
+.marcasLogo{
+    width: 38px;
+    padding: 2px;
+  
+}
+.logoDeMarcas{
+  width: 50%;
+  height: 30%;
+  padding: 5px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+
+ 
+}
+  .marcasLogo{
+    width: 28px;
+    padding: 2px;
+  
+}
+/*footer*/
+
+footer {
+    grid-area: pie;
+    background-color: #E2A405;
+    color:  #4D4D4D;
+    text-align: center;
+    width: 100%;
+    height: 8%;
+    position: fixed;
+    bottom: 0;
+}
+/*iconoWs*/
+.iconoWs {
+    display: none;
+    width: 15px;
+    position: fixed;
+    left: 95%;
+  top: 89%;
+}
+
+}
+
+/*-------------------------------------------desktop-----------------------------------------------------*/
+
+@media ( min-width :1024px) 
+{
+
+
+/*body*/
+
+.bodyIndex{
+     width: 100%;
+     height: 100vh;
+     background-image:url(/img/homemoto.jpeg);
+}
+
+/*gridArea*/
+
+#grid-area{
+display: grid;
+grid-template-areas: " cabeza menu lateral"/*fila1*/
+"hero hero lateral" /*fila2*/ 
+"hero hero lateral" /*fila3*/ 
+"pie pie pie" /*fila4*/;
+grid-template-columns: 35% auto 15%;
+grid-template-rows: 1fr 3fr 3fr 1fr ;
+grid-column-gap: 5px;
+grid-row: 5px;
+
+}
+
+/*header*/
+
+header {
+   grid-area: cabeza; 
+}
+/*logoPrincipal*/
+
+.logo {
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.imgLogo{
+width: 80%;
+height: 60%;
+padding: 5px;
+margin: 5px;
+
+
+}
+
+/*menuNavegacion*/
+nav {
+    grid-area: menu;
+    margin:5px;
+      
+}
+.navegacion ul {
+    list-style: none
+}
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 15px 20px;
+    color: #4D4D4D;
+    font-size: 15px;
+    font-weight: bold;
+    list-style: none
+   
+}
+
+
+
+.menu > li > a {
+    display: block;
+    padding: 15px 20px;
+    color: #4D4D4D;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/*subMenu*/
+
+.subMenu {
+    position: absolute;
+   display: none;
+   
+}
+
+.subMenu li a {
+    background-color: #dadada;
+    display: block;
+    padding: 10px 5px;
+    color: #4D4D4D;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    
+}
+
+
+
+.menu li:hover .subMenu {
+    display: block;
+
+   
+
+
+}
+
+/*contenido*/
+
+#hero {
+    grid-area: hero;
+
+
+   }
+
+/*tituloIndex*/
+.heroTitle {
+    font-size: 40px;
+    color: #4D4D4D;;
+    text-transform: uppercase;
+   position: relative;
+   left: 180px;
+   top: 70px;
+   
+
+}
+
+.heroSubtitle {
+    font-size: 14px;
+    color: #4D4D4D;;
+    position: relative;
+    left: 180px;
+    top: 70px;
+  
+}
+
+/*laterales*/
+aside {
+    grid-area: lateral;
+    width: 100%;
+    height: 100%;
+ 
+  }
+
+.carrito {
+  width: 50%;   
+ height: 12%;
+ padding: 5px;
+ margin: 5px;
+ display: flex;
+ flex-direction: row;
+ justify-content: flex-start;
+ align-items: flex-end;
+}
+
+.userCarrito{
+   width: 30%;
+   height: 35%;
+   padding: 2px;
+   margin: 2px;
+
+}
+/*logosMarcas*/
+.marcasLogo{
+    width: 38px;
+    padding: 2px;
+  
+}
+.logoDeMarcas{
+  width: 50%;
+  height: 30%;
+  padding: 5px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+
+ 
+}
+
+/*footer*/
+
+ footer {
+    grid-area: pie;
+    background-color: #E2A405;
+    color:  #4D4D4D;
+    text-align: center;
+    width: 100%;
+    height: 8%;
+    position: fixed;
+    bottom: 0;
+}
+.redes {
+    width: 20px;
+    padding: 1px;
+   
+}
+/*iconoWs*/
+.iconoWs {
+    width: 45px;
+    position: fixed;
+    left: 95%;
+  top: 89%;
+}
+
+/*--------------pages-------------------------------------*/
+
+
+/*pagesServicios*/
+
+.bodyIndex{
+    width: 90%;
+    height: 90vh;
+  background-color: whitesmoke;
+}
+
+
+/*gridArea*/
+
+#grid-area{
+    display: grid;
+    grid-template-areas: " cabeza menu lateral"/*fila1*/
+    "hero hero lateral" /*fila2*/ 
+    "hero hero lateral" /*fila3*/ 
+    "pie pie pie" /*fila4*/;
+    grid-template-columns: 35% auto 15%;
+    grid-template-rows: 1fr 3fr 3fr 1fr ;
+    grid-column-gap: 5px;
+    grid-row: 5px;
+    
+    }
+    
+    /*header*/
+    
+    header {
+       grid-area: cabeza; 
+    }
+    /*logoPrincipal*/
+    
+    .logo {
+    
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+    .imgLogo{
+    width: 80%;
+    height: 60%;
+    padding: 5px;
+    margin: 5px;
+    
+    
+    }
+    
+    /*menuNavegacion*/
+    nav {
+        grid-area: menu;
+        margin:5px;
+          
+    }
+    .navegacion ul {
+        list-style: none
+    }
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 15px 20px;
+        color: #4D4D4D;
+        font-size: 15px;
+        font-weight: bold;
+        list-style: none
+       
+    }
+    
+    
+    
+    .menu > li > a {
+        display: block;
+        padding: 15px 20px;
+        color: #4D4D4D;
+        font-size: 15px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    
+    
+    /*subMenu*/
+    
+    .subMenu {
+        position: absolute;
+       display: none;
+       
+    }
+    
+    .subMenu li a {
+        background-color: #dadada;
+        display: block;
+        padding: 10px 5px;
+        color: #4D4D4D;
+        font-size: 15px;
+        font-weight: bold;
+        text-decoration: none;
+        
+    }
+    
+    
+    
+    .menu li:hover .subMenu {
+        display: block;
+    
+       
+    
+    
+    }
+    
+    /*contenido*/
+    
+    #hero {
+        grid-area: hero;
+    
+    
+       }
+    
+
+
+
+    /*laterales*/
+    aside {
+        grid-area: lateral;
+        width: 100%;
+        height: 100%;
+       
+      }
+ /*logosMarcas*/
+
+.marcasLogoPages{
+    width: 28px;
+    height: 25px;
+    padding: 5px;
+    margin: 5px;
+   
+  
+}
+.logoDeMarcasPages{
+    padding: 5px;
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+justify-content: flex-end;
+align-items: center;
+
+}
+
+.buscar {
+position: relative;
+right: 150px;
+bottom: 10px;
+
+
+}
+.imgLupa{
+    position: relative;
+    left: 18px;
+    bottom: 30px;
+
+} 
+
+
+    /*footer*/
+    
+     footer {
+        grid-area: pie;
+        background-color: #E2A405;
+        color:  #4D4D4D;
+        text-align: center;
+        width: 100%;
+        height: 8%;
+        position: fixed;
+        bottom: 0;
+    }
+    .redes {
+        width: 20px;
+        padding: 1px;
+       
+    }
+    /*iconoWs*/
+    .iconoWs {
+        width: 45px;
+        position: fixed;
+        left: 95%;
+      top: 89%;
+    }
+
+
+.verde{
+
+    background-color: darkcyan;
+}
+.color{
+color: red;
+}
+
+
+.h1{
+    background: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
